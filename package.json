@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/JikkuJose/thirdeyeorg.github.io#readme",
   "dependencies": {
+    "bootswatch": "^3.3.6",
     "jquery": "^3.0.0",
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.5",
