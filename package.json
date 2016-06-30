@@ -1,0 +1,23 @@
+{
+  "name": "third_eye",
+  "version": "0.0.1",
+  "description": "Website for Third Eye",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JikkuJose/thirdeyeorg.github.io.git"
+  },
+  "keywords": [
+    "thirdeye",
+    "website"
+  ],
+  "author": "Jikku Jose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JikkuJose/thirdeyeorg.github.io/issues"
+  },
+  "homepage": "https://github.com/JikkuJose/thirdeyeorg.github.io#readme"
+}
