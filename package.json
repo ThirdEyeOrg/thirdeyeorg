@@ -4,7 +4,7 @@
   "description": "Website for Third Eye",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/JikkuJose/thirdeyeorg.github.io#readme",
   "dependencies": {
+    "jquery": "^3.0.0",
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.5",
     "react-dom": "^15.1.0"
