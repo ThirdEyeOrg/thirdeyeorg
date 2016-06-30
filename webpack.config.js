@@ -17,6 +17,10 @@ module.exports = {
         query: {
           presets: ['es2015', 'react'],
         },
+      },
+      {
+        test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        loader: 'file-loader',
       }
     ],
   },
@@ -24,6 +28,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {from: './node_modules/jquery/dist/jquery.min.js'},
       {from: './node_modules/bootswatch/paper/bootstrap.min.css'},
+      {from: './node_modules/grommet/grommet-aruba.min.css', to: 'grommet.min.css'},
       {from: './src/app.html', to: 'index.html'},
       {from: './src/css/style.css'},
     ]),
