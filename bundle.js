@@ -20387,6 +20387,18 @@
 
 	var _g_worldmap2 = _interopRequireDefault(_g_worldmap);
 
+	var _intro = __webpack_require__(221);
+
+	var _intro2 = _interopRequireDefault(_intro);
+
+	var _reactViewportSlider = __webpack_require__(222);
+
+	var _reactViewportSlider2 = _interopRequireDefault(_reactViewportSlider);
+
+	var _g_meter = __webpack_require__(230);
+
+	var _g_meter2 = _interopRequireDefault(_g_meter);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20410,21 +20422,29 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_g_header2.default, null),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'container', style: { 'marginTop': '105px' } },
-	          _react2.default.createElement(_g_chart2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container' },
-	          _react2.default.createElement(_g_distribution2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container' },
-	          _react2.default.createElement(_g_worldmap2.default, null)
+	          _reactViewportSlider2.default,
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            { style: { margin: '0 auto', padding: '120px' } },
+	            _react2.default.createElement(_intro2.default, null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: { margin: '0 auto', padding: '120px' } },
+	            _react2.default.createElement(_g_distribution2.default, null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: { margin: '0 auto', padding: '120px' } },
+	            _react2.default.createElement(_g_meter2.default, null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: { margin: '0 auto', padding: '120px' }, align: 'center' },
+	            _react2.default.createElement(_g_worldmap2.default, null)
+	          )
 	        )
 	      );
 	    }
@@ -30316,6 +30336,2298 @@
 	    onClick: _react.PropTypes.func
 	  }))
 	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Intro = function (_React$Component) {
+	  _inherits(Intro, _React$Component);
+
+	  function Intro() {
+	    _classCallCheck(this, Intro);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Intro).apply(this, arguments));
+	  }
+
+	  _createClass(Intro, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'jumbotron', style: { padding: '23px', textAlign: 'center' } },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Third Eye'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Decentralized Autonomous Emergency Response System'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Intro;
+	}(_react2.default.Component);
+
+	exports.default = Intro;
+
+/***/ },
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _Slider = __webpack_require__(223);
+
+	var _Slider2 = _interopRequireDefault(_Slider);
+
+	exports['default'] = _Slider2['default'];
+	module.exports = exports['default'];
+
+/***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Item = __webpack_require__(224);
+
+	var _Item2 = _interopRequireDefault(_Item);
+
+	var _Paginator = __webpack_require__(227);
+
+	var _Paginator2 = _interopRequireDefault(_Paginator);
+
+	var _utilScrollToY = __webpack_require__(229);
+
+	var _utilScrollToY2 = _interopRequireDefault(_utilScrollToY);
+
+	var Slider = (function (_Component) {
+	  _inherits(Slider, _Component);
+
+	  function Slider(props) {
+	    _classCallCheck(this, Slider);
+
+	    _Component.call(this, props);
+
+	    this.state = { activeIndex: 1 };
+
+	    this.setActive = this.setActive.bind(this);
+	    this.handleScroll = this.handleScroll.bind(this);
+	    this.lastScroll = 0;
+
+	    window.addEventListener('scroll', this.handleScroll);
+	  }
+
+	  Slider.prototype.componentWillUnmount = function componentWillUnmount() {
+	    window.removeEventListener('scroll', this.handleScroll);
+	  };
+
+	  Slider.prototype.handleScroll = function handleScroll() {
+	    if (this.isAnimating) {
+	      return;
+	    }
+
+	    // up
+	    if (window.scrollY > this.lastScroll && window.innerHeight + window.scrollY > window.innerHeight * this.state.activeIndex + window.innerHeight / 2) {
+	      this.setActive(this.state.activeIndex + 1);
+	      // down
+	    } else if (window.scrollY < this.lastScroll && window.innerHeight + window.scrollY < window.innerHeight * this.state.activeIndex - window.innerHeight / 1.5) {
+	        this.setActive(this.state.activeIndex - 1);
+	      }
+
+	    this.lastScroll = window.scrollY;
+	  };
+
+	  Slider.prototype.setActive = function setActive(index, scrollTo) {
+	    var _this = this;
+
+	    this.setState({ activeIndex: index }, function () {
+	      if (scrollTo) {
+	        _this.isAnimating = true;
+	        _utilScrollToY2['default'](_this.refs['slide-' + index].offsetTop, 500, 'easeInOutQuint', function () {
+	          _this.isAnimating = false;
+	        });
+	      }
+	    });
+	  };
+
+	  Slider.prototype.render = function render() {
+	    var _this2 = this;
+
+	    if (!this.props.children) {
+	      return null;
+	    }
+
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'viewport-slider' },
+	      _react2['default'].createElement(_Paginator2['default'], { activeIndex: this.state.activeIndex,
+	        bullets: this.props.children.length,
+	        onClick: this.setActive }),
+	      this.props.children.map(function (child, key) {
+	        var index = key + 1;
+
+	        return _react2['default'].createElement(
+	          'div',
+	          { ref: 'slide-' + index, key: index },
+	          _react2['default'].createElement(
+	            _Item2['default'],
+	            _extends({}, child.props, {
+	              index: index,
+	              hideButton: index === _this2.props.children.length,
+	              onClick: _this2.setActive }),
+	            child
+	          )
+	        );
+	      })
+	    );
+	  };
+
+	  return Slider;
+	})(_react.Component);
+
+	exports['default'] = Slider;
+
+	Slider.defaultProps = {};
+
+	Slider.propTypes = {};
+	module.exports = exports['default'];
+
+/***/ },
+/* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(225);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _Button = __webpack_require__(226);
+
+	var _Button2 = _interopRequireDefault(_Button);
+
+	var Item = function Item(props) {
+
+	  var style = {
+	    boxSizing: 'border-box',
+	    height: '100vh',
+	    position: 'relative',
+	    width: '100%'
+	  };
+
+	  var classes = _classnames2['default']('viewport-slider-item', 'viewport-slider-item-' + props.index, props.itemClass);
+
+	  var propsClone = Object.create(props || {});
+	  delete propsClone.children;
+
+	  var renderButton = function renderButton() {
+	    return _react2['default'].createElement(
+	      _Button2['default'],
+	      { index: props.index, onClick: props.onClick },
+	      props.buttonLabel
+	    );
+	  };
+
+	  return _react2['default'].createElement(
+	    'div',
+	    _extends({}, propsClone, { className: classes, style: Object.assign(style, props.itemStyle) }),
+	    props.children,
+	    props.hideButton ? null : renderButton()
+	  );
+	};
+
+	Item.defaultProps = {
+	  buttonLabel: 'next',
+	  hideButton: false,
+	  itemStyle: {}
+	};
+
+	Item.propTypes = {
+	  buttonLabel: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.element, _react.PropTypes.object]),
+	  hideButton: _react.PropTypes.bool,
+	  index: _react.PropTypes.number.isRequired,
+	  itemClass: _react.PropTypes.string,
+	  itemStyle: _react.PropTypes.object,
+	  onClick: _react.PropTypes.func
+	};
+
+	exports['default'] = Item;
+	module.exports = exports['default'];
+
+/***/ },
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2015 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+
+	(function () {
+		'use strict';
+
+		var hasOwn = {}.hasOwnProperty;
+
+		function classNames () {
+			var classes = '';
+
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+
+				var argType = typeof arg;
+
+				if (argType === 'string' || argType === 'number') {
+					classes += ' ' + arg;
+				} else if (Array.isArray(arg)) {
+					classes += ' ' + classNames.apply(null, arg);
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes += ' ' + key;
+						}
+					}
+				}
+			}
+
+			return classes.substr(1);
+		}
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
+
+/***/ },
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _classnames = __webpack_require__(225);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var Button = function Button(props) {
+
+	  var style = {
+	    bottom: '50px',
+	    left: '50%',
+	    position: 'absolute',
+	    transform: 'translateX(-50%)',
+	    zIndex: 2
+	  };
+
+	  var handleClick = function handleClick() {
+	    props.onClick(props.index + 1, true);
+	  };
+
+	  return _react2['default'].createElement(
+	    'a',
+	    { href: '#viewport-slide-' + (props.index + 1),
+	      className: 'viewport-slider-button',
+	      onClick: handleClick,
+	      style: style },
+	    props.children
+	  );
+	};
+
+	Button.propTypes = {
+	  index: _react.PropTypes.number.isRequired,
+	  onClick: _react.PropTypes.func
+	};
+
+	exports['default'] = Button;
+	module.exports = exports['default'];
+
+/***/ },
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Bullet = __webpack_require__(228);
+
+	var _Bullet2 = _interopRequireDefault(_Bullet);
+
+	var Paginator = function Paginator(props) {
+
+	  var style = {
+	    top: '50%',
+	    right: '50px',
+	    position: 'fixed',
+	    transform: 'translateY(-50%)',
+	    zIndex: 2
+	  };
+
+	  return _react2['default'].createElement(
+	    'div',
+	    { className: 'viewport-slider-paginator', style: style },
+	    Array.from(new Array(props.bullets), function (x, i) {
+	      return i + 1;
+	    }).map(function (i) {
+	      return _react2['default'].createElement(_Bullet2['default'], { active: i === props.activeIndex,
+	        key: i,
+	        index: i,
+	        onClick: props.onClick });
+	    })
+	  );
+	};
+
+	Paginator.propTypes = {
+	  activeIndex: _react.PropTypes.number,
+	  bullets: _react.PropTypes.number.isRequired,
+	  onClick: _react.PropTypes.func
+	};
+
+	exports['default'] = Paginator;
+	module.exports = exports['default'];
+
+/***/ },
+/* 228 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _classnames = __webpack_require__(225);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var Bullet = function Bullet(props) {
+
+	  var style = {
+	    display: 'block',
+	    height: '20px',
+	    width: '20px'
+	  };
+
+	  var handleClick = function handleClick() {
+	    props.onClick(props.index, true);
+	  };
+
+	  var classes = _classnames2['default']('viewport-slider-paginator-bullet', { 'is-active': props.active });
+
+	  return _react2['default'].createElement('a', { href: '#viewport-slide-' + props.index,
+	    className: classes,
+	    onClick: handleClick,
+	    style: style });
+	};
+
+	Bullet.propTypes = {
+	  active: _react.PropTypes.bool,
+	  index: _react.PropTypes.number.isRequired,
+	  onClick: _react.PropTypes.func
+	};
+
+	exports['default'] = Bullet;
+	module.exports = exports['default'];
+
+/***/ },
+/* 229 */
+/***/ function(module, exports) {
+
+	// first add raf shim
+	// http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+	'use strict';
+
+	exports.__esModule = true;
+	exports['default'] = scrollToY;
+	window.requestAnimFrame = (function () {
+	  return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
+	    window.setTimeout(callback, 1000 / 60);
+	  };
+	})();
+
+	// http://stackoverflow.com/a/26808520
+	// main function
+
+	function scrollToY(scrollTargetY, speed, easing, callback) {
+	  // scrollTargetY: the target scrollY property of the window
+	  // speed: time in pixels per second
+	  // easing: easing equation to use
+
+	  var scrollY = window.scrollY,
+	      scrollTargetY = scrollTargetY || 0,
+	      speed = speed || 2000,
+	      easing = easing || 'easeOutSine',
+	      currentTime = 0;
+
+	  // min time .1, max time .8 seconds
+	  var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
+
+	  // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+	  var PI_D2 = Math.PI / 2,
+	      easingEquations = {
+	    easeOutSine: function easeOutSine(pos) {
+	      return Math.sin(pos * (Math.PI / 2));
+	    },
+	    easeInOutSine: function easeInOutSine(pos) {
+	      return -0.5 * (Math.cos(Math.PI * pos) - 1);
+	    },
+	    easeInOutQuint: function easeInOutQuint(pos) {
+	      if ((pos /= 0.5) < 1) {
+	        return 0.5 * Math.pow(pos, 5);
+	      }
+	      return 0.5 * (Math.pow(pos - 2, 5) + 2);
+	    }
+	  };
+
+	  // add animation loop
+	  function tick() {
+	    currentTime += 1 / 60;
+
+	    var p = currentTime / time;
+	    var t = easingEquations[easing](p);
+
+	    if (p < 1) {
+	      requestAnimFrame(tick);
+
+	      window.scrollTo(0, scrollY + (scrollTargetY - scrollY) * t);
+	    } else {
+	      if (callback) {
+	        callback();
+	      }
+	      window.scrollTo(0, scrollTargetY);
+	    }
+	  }
+
+	  // call it once to get started
+	  tick();
+	}
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Meter = __webpack_require__(231);
+
+	var _Meter2 = _interopRequireDefault(_Meter);
+
+	var _g_headline = __webpack_require__(215);
+
+	var _g_headline2 = _interopRequireDefault(_g_headline);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var GMeter = function (_React$Component) {
+	  _inherits(GMeter, _React$Component);
+
+	  function GMeter() {
+	    _classCallCheck(this, GMeter);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(GMeter).apply(this, arguments));
+	  }
+
+	  _createClass(GMeter, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(_g_headline2.default, { text: 'Current Communication Mode Utilization' })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { style: { margin: '0 auto', width: '400px' } },
+	          _react2.default.createElement(_Meter2.default, { type: 'arc', legend: true, series: [{ "label": "SMS", "value": 50, "colorIndex": "graph-1" }, { "label": "Phone", "value": 200, "colorIndex": "graph-2" }, { "label": "Internet", "value": 100, "colorIndex": "graph-3" }, { "label": "Thrid Party", "value": 300, "colorIndex": "graph-4" }], a11yTitleId: 'meter-title-14', a11yDescId: 'meter-desc-14' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return GMeter;
+	}(_react2.default.Component);
+
+	exports.default = GMeter;
+
+/***/ },
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(38);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _Responsive = __webpack_require__(207);
+
+	var _Responsive2 = _interopRequireDefault(_Responsive);
+
+	var _Legend = __webpack_require__(214);
+
+	var _Legend2 = _interopRequireDefault(_Legend);
+
+	var _Bar = __webpack_require__(232);
+
+	var _Bar2 = _interopRequireDefault(_Bar);
+
+	var _Spiral = __webpack_require__(235);
+
+	var _Spiral2 = _interopRequireDefault(_Spiral);
+
+	var _Circle = __webpack_require__(236);
+
+	var _Circle2 = _interopRequireDefault(_Circle);
+
+	var _Arc = __webpack_require__(237);
+
+	var _Arc2 = _interopRequireDefault(_Arc);
+
+	var _Intl = __webpack_require__(175);
+
+	var _Intl2 = _interopRequireDefault(_Intl);
+
+	var _CSSClassnames = __webpack_require__(177);
+
+	var _CSSClassnames2 = _interopRequireDefault(_CSSClassnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CLASS_ROOT = _CSSClassnames2.default.METER;
+
+	var TYPE_COMPONENT = {
+	  'bar': _Bar2.default,
+	  'circle': _Circle2.default,
+	  'arc': _Arc2.default,
+	  'spiral': _Spiral2.default
+	};
+
+	var Meter = function (_Component) {
+	  _inherits(Meter, _Component);
+
+	  function Meter(props) {
+	    _classCallCheck(this, Meter);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Meter).call(this));
+
+	    _this._onResponsive = _this._onResponsive.bind(_this);
+	    _this._initialTimeout = _this._initialTimeout.bind(_this);
+	    _this._layout = _this._layout.bind(_this);
+	    _this._onResize = _this._onResize.bind(_this);
+	    _this._onActivate = _this._onActivate.bind(_this);
+
+	    _this.state = _this._stateFromProps(props);
+	    if (_this.state.placeLegend) {
+	      _this.state.legendPlacement = 'bottom';
+	    }
+	    _this.state.initial = true;
+	    _this.state.limitMeterSize = false;
+	    return _this;
+	  }
+
+	  _createClass(Meter, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      if (this.props.responsive) {
+	        this._responsive = _Responsive2.default.start(this._onResponsive);
+	      }
+
+	      this._initialTimer = setTimeout(this._initialTimeout, 10);
+	      window.addEventListener('resize', this._onResize);
+	      this._onResize();
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      var state = this._stateFromProps(nextProps);
+	      this.setState(state);
+	      this._onResize();
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      clearTimeout(this._initialTimer);
+	      clearTimeout(this._resizeTimer);
+	      window.removeEventListener('resize', this._onResize);
+
+	      if (this._responsive) {
+	        this._responsive.stop();
+	      }
+	    }
+	  }, {
+	    key: '_initialTimeout',
+	    value: function _initialTimeout() {
+	      this.setState({
+	        initial: false,
+	        activeIndex: this.state.importantIndex
+	      });
+	      clearTimeout(this._initialTimer);
+	    }
+	  }, {
+	    key: '_onResponsive',
+	    value: function _onResponsive(small) {
+	      if (small) {
+	        this.setState({ limitMeterSize: true });
+	      } else {
+	        this.setState({ limitMeterSize: false });
+	      }
+	    }
+	  }, {
+	    key: '_onActivate',
+	    value: function _onActivate(index) {
+	      if (index === null) {
+	        index = this.state.importantIndex;
+	      }
+	      this.setState({ initial: false, activeIndex: index });
+	    }
+	  }, {
+	    key: '_onResize',
+	    value: function _onResize() {
+	      // debounce
+	      clearTimeout(this._resizeTimer);
+	      this._resizeTimer = setTimeout(this._layout, 50);
+	    }
+	  }, {
+	    key: '_layout',
+	    value: function _layout() {
+	      if (this.state.placeLegend) {
+	        // legendPlacement based on available window orientation
+	        var ratio = window.innerWidth / window.innerHeight;
+	        if (ratio < 0.8) {
+	          this.setState({ legendPlacement: 'bottom' });
+	        } else if (ratio > 1.2) {
+	          this.setState({ legendPlacement: 'right' });
+	        }
+	      }
+
+	      if ('right' === this.state.legendPlacement) {
+	        if (this.refs.legend) {
+	          var graphicHeight = this.refs.activeGraphic.offsetHeight;
+	          var legendHeight = _reactDom2.default.findDOMNode(this.refs.legend).offsetHeight;
+	          this.setState({ tallLegend: legendHeight > graphicHeight });
+	        }
+	      }
+	    }
+	  }, {
+	    key: '_normalizeSeries',
+	    value: function _normalizeSeries(props, min, max, thresholds) {
+	      var series = [];
+	      if (props.series) {
+	        series = props.series;
+	      } else if (props.value || props.value === 0) {
+	        series = [{ value: props.value, important: true }];
+	      }
+
+	      // set color index
+	      if (series.length === 1 && props.thresholds) {
+	        (function () {
+	          var item = series[0];
+	          if (!item.colorIndex) {
+	            (function () {
+	              // see which threshold color index to use
+	              var cumulative = 0;
+	              thresholds.some(function (threshold) {
+	                cumulative += threshold.value;
+	                if (item.value < cumulative) {
+	                  item.colorIndex = threshold.colorIndex || 'graph-1';
+	                  return true;
+	                }
+	                return false;
+	              });
+	            })();
+	          }
+	        })();
+	      } else {
+	        series.forEach(function (item, index) {
+	          if (!item.colorIndex) {
+	            item.colorIndex = 'graph-' + (index + 1);
+	          }
+	        });
+	      }
+
+	      return series;
+	    }
+	  }, {
+	    key: '_normalizeThresholds',
+	    value: function _normalizeThresholds(props, min, max) {
+	      var thresholds = [];
+	      if (props.thresholds) {
+	        // Convert thresholds from absolute values to cummulative,
+	        // so we can re-use the series drawing code.
+	        var priorValue = min.value;
+	        thresholds.push({ hidden: true });
+	        for (var i = 0; i < props.thresholds.length; i += 1) {
+	          var threshold = props.thresholds[i];
+	          // The value for the prior threshold ends at the beginning of this
+	          // threshold. Series drawing code expects the end value.
+	          thresholds[i].value = threshold.value - priorValue;
+	          thresholds.push({
+	            label: threshold.label,
+	            colorIndex: threshold.colorIndex,
+	            ariaLabel: threshold.value + ' ' + (props.units || '') + ' ' + (threshold.label || '')
+	          });
+	          priorValue = threshold.value;
+	          if (i === props.thresholds.length - 1) {
+	            thresholds[thresholds.length - 1].value = max.value - priorValue;
+	          }
+	        }
+	      } else if (props.threshold) {
+	        // let remaining = max.value - props.threshold;
+	        thresholds = [{ value: props.threshold, hidden: true }, {
+	          value: max.value - props.threshold,
+	          colorIndex: 'critical',
+	          ariaLabel: props.threshold + ' ' + (props.units || '')
+	        }];
+	      }
+	      return thresholds;
+	    }
+	  }, {
+	    key: '_importantIndex',
+	    value: function _importantIndex(props, series) {
+	      var result = null;
+	      if (series.length === 1) {
+	        result = 0;
+	      }
+	      if (props.hasOwnProperty('important')) {
+	        result = props.important;
+	      }
+	      series.some(function (data, index) {
+	        if (data.important) {
+	          result = index;
+	          return true;
+	        }
+	        return false;
+	      });
+	      return result;
+	    }
+
+	    // Normalize min or max to an object.
+
+	  }, {
+	    key: '_terminal',
+	    value: function _terminal(terminal) {
+	      if (typeof terminal === 'number') {
+	        terminal = { value: terminal };
+	      }
+	      return terminal;
+	    }
+	  }, {
+	    key: '_seriesTotal',
+	    value: function _seriesTotal(series) {
+	      var total = 0;
+	      series.some(function (item) {
+	        total += item.value;
+	      });
+	      return total;
+	    }
+	  }, {
+	    key: '_seriesMax',
+	    value: function _seriesMax(series) {
+	      var max = 0;
+	      series.some(function (item) {
+	        max = Math.max(max, item.value);
+	      });
+	      return max;
+	    }
+
+	    // Generates state based on the provided props.
+
+	  }, {
+	    key: '_stateFromProps',
+	    value: function _stateFromProps(props) {
+	      var total = void 0;
+	      if (props.series) {
+	        total = this._seriesTotal(props.series);
+	      } else if (props.hasOwnProperty('value')) {
+	        total = props.value;
+	      } else {
+	        total = 0;
+	      }
+	      var seriesMax = void 0;
+	      // only care about series max when there are multiple values
+	      if (props.series && props.series.length > 1) {
+	        seriesMax = this._seriesMax(props.series);
+	      }
+	      // Normalize min and max
+	      var min = this._terminal(props.min || 0);
+	      // Max could be provided in props or come from the total of
+	      // a multi-value series.
+	      var max = this._terminal(props.max || (props.stacked ? Math.max(seriesMax, total || 0, 100) : seriesMax || Math.max(total || 0, 100)));
+	      // Normalize simple threshold prop to an array, if needed.
+	      var thresholds = this._normalizeThresholds(props, min, max);
+	      // Normalize simple value prop to a series, if needed.
+	      var series = this._normalizeSeries(props, min, max, thresholds);
+	      // Determine important index.
+	      var importantIndex = this._importantIndex(props, series);
+
+	      var state = {
+	        importantIndex: importantIndex,
+	        activeIndex: importantIndex,
+	        series: series,
+	        thresholds: thresholds,
+	        min: min,
+	        max: max,
+	        total: total
+	      };
+
+	      // legend
+	      state.placeLegend = !(props.legend && props.legend.placement);
+	      if (!state.placeLegend) {
+	        state.legendPlacement = props.legend.placement;
+	      }
+
+	      return state;
+	    }
+	  }, {
+	    key: '_getActiveFields',
+	    value: function _getActiveFields() {
+	      var fields = void 0;
+	      if (null === this.state.activeIndex) {
+	        fields = {
+	          value: this.state.total,
+	          label: _Intl2.default.getMessage(this.context.intl, 'Total')
+	        };
+	      } else {
+	        var active = this.state.series[this.state.activeIndex];
+	        if (!active) {
+	          active = this.state.series[0];
+	        }
+	        fields = {
+	          value: active.value,
+	          label: active.label,
+	          onClick: active.onClick
+	        };
+	      }
+	      return fields;
+	    }
+	  }, {
+	    key: '_renderActiveValue',
+	    value: function _renderActiveValue() {
+	      var fields = this._getActiveFields();
+	      var classes = [CLASS_ROOT + '__value'];
+	      if (fields.onClick) {
+	        classes.push(CLASS_ROOT + '__value--active');
+	      }
+	      var units = void 0;
+	      if (this.props.units) {
+	        units = _react2.default.createElement(
+	          'span',
+	          { className: CLASS_ROOT + '__value-units large-number-font' },
+	          this.props.units
+	        );
+	      }
+
+	      return _react2.default.createElement(
+	        'div',
+	        { 'aria-hidden': 'true', role: 'presentation',
+	          className: classes.join(' '), onClick: fields.onClick },
+	        _react2.default.createElement(
+	          'span',
+	          {
+	            className: CLASS_ROOT + '__value-value large-number-font' },
+	          fields.value,
+	          units
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          { className: CLASS_ROOT + '__value-label' },
+	          fields.label
+	        )
+	      );
+	    }
+	  }, {
+	    key: '_renderMinMax',
+	    value: function _renderMinMax(classes) {
+	      var minLabel = void 0;
+	      if (this.state.min.label) {
+	        minLabel = _react2.default.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__minmax-min' },
+	          this.state.min.label
+	        );
+	      }
+	      var maxLabel = void 0;
+	      if (this.state.max.label) {
+	        maxLabel = _react2.default.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__minmax-max' },
+	          this.state.max.label
+	        );
+	      }
+	      var minMax = void 0;
+	      if (minLabel || maxLabel) {
+	        minMax = _react2.default.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__minmax-container' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: CLASS_ROOT + '__minmax' },
+	            minLabel,
+	            maxLabel
+	          )
+	        );
+	        classes.push(CLASS_ROOT + '--minmax');
+	      }
+	      return minMax;
+	    }
+	  }, {
+	    key: '_renderLegend',
+	    value: function _renderLegend() {
+	      var total = _typeof(this.props.legend) === 'object' && this.props.legend.total;
+	      return _react2.default.createElement(_Legend2.default, { ref: 'legend', className: CLASS_ROOT + '__legend',
+	        series: this.state.series,
+	        units: this.props.units,
+	        total: total,
+	        activeIndex: this.state.activeIndex,
+	        onActive: this._onActivate });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var classes = [CLASS_ROOT];
+	      classes.push(CLASS_ROOT + '--' + this.props.type);
+	      if (this.props.vertical) {
+	        classes.push(CLASS_ROOT + '--vertical');
+	      }
+	      if (this.props.stacked) {
+	        classes.push(CLASS_ROOT + '--stacked');
+	      }
+	      if (this.props.size) {
+	        var responsiveSize = this.props.size;
+	        // shrink Meter to medium size if large and up
+	        if (this.state.limitMeterSize && (this.props.size === 'large' || this.props.size === 'xlarge')) {
+	          responsiveSize = 'medium';
+	        }
+	        classes.push(CLASS_ROOT + '--' + responsiveSize);
+	      }
+	      if (this.state.series.length === 0) {
+	        classes.push(CLASS_ROOT + '--loading');
+	      } else if (this.state.series.length === 1) {
+	        classes.push(CLASS_ROOT + '--single');
+	      } else {
+	        classes.push(CLASS_ROOT + '--count-' + this.state.series.length);
+	      }
+	      if (this.state.activeIndex !== null) {
+	        classes.push(CLASS_ROOT + '--active');
+	      }
+	      if (this.state.tallLegend) {
+	        classes.push(CLASS_ROOT + '--tall-legend');
+	      }
+	      if (this.props.className) {
+	        classes.push(this.props.className);
+	      }
+
+	      var minMax = this._renderMinMax(classes);
+	      var activeValue = void 0;
+	      if (this.state.series.length > 0) {
+	        activeValue = this._renderActiveValue();
+	      }
+	      var legend = void 0;
+	      var a11yRole = void 0;
+
+	      if (this.props.legend || this.props.series) {
+	        a11yRole = 'tablist';
+
+	        if (this.props.legend) {
+	          if ('inline' !== this.props.legend.placement) {
+	            legend = this._renderLegend();
+	          } else {
+	            // Hide value (displaying total), if legend is inline
+	            // and total is set to false
+	            if (!this.props.legend.total) {
+	              activeValue = null;
+	            }
+	          }
+	          classes.push(CLASS_ROOT + '--legend-' + this.state.legendPlacement);
+	          if (this.props.legend.align) {
+	            classes.push(CLASS_ROOT + '--legend-align-' + this.props.legend.align);
+	          }
+	        }
+	      }
+
+	      var GraphicComponent = TYPE_COMPONENT[this.props.type];
+	      var graphic = _react2.default.createElement(GraphicComponent, {
+	        a11yTitle: this.props.a11yTitle,
+	        a11yTitleId: this.props.a11yTitleId,
+	        a11yDesc: this.props.a11yDesc,
+	        a11yDescId: this.props.a11yDescId,
+	        a11yRole: a11yRole,
+	        activeIndex: this.state.activeIndex,
+	        min: this.state.min, max: this.state.max,
+	        legend: this.props.legend,
+	        onActivate: this._onActivate,
+	        series: this.state.series,
+	        stacked: this.props.stacked,
+	        thresholds: this.state.thresholds,
+	        total: this.state.total,
+	        units: this.props.units,
+	        vertical: this.props.vertical });
+
+	      var graphicContainer = _react2.default.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__graphic-container' },
+	        graphic,
+	        minMax
+	      );
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: classes.join(' ') },
+	        _react2.default.createElement(
+	          'div',
+	          { ref: 'activeGraphic', className: CLASS_ROOT + '__value-container' },
+	          graphicContainer,
+	          activeValue
+	        ),
+	        legend
+	      );
+	    }
+	  }]);
+
+	  return Meter;
+	}(_react.Component);
+
+	exports.default = Meter;
+
+
+	Meter.propTypes = {
+	  a11yTitle: _react.PropTypes.string,
+	  a11yTitleId: _react.PropTypes.string,
+	  a11yDescId: _react.PropTypes.string,
+	  a11yDesc: _react.PropTypes.string,
+	  important: _react.PropTypes.number,
+	  legend: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.shape({
+	    align: _react.PropTypes.oneOf(['start', 'center', 'end']),
+	    placement: _react.PropTypes.oneOf(['right', 'bottom', 'inline']),
+	    total: _react.PropTypes.bool
+	  })]),
+	  max: _react.PropTypes.oneOfType([_react.PropTypes.shape({
+	    value: _react.PropTypes.number.isRequired,
+	    label: _react.PropTypes.string
+	  }), _react.PropTypes.number]),
+	  min: _react.PropTypes.oneOfType([_react.PropTypes.shape({
+	    value: _react.PropTypes.number.isRequired,
+	    label: _react.PropTypes.string
+	  }), _react.PropTypes.number]),
+	  size: _react.PropTypes.oneOf(['small', 'medium', 'large', 'xlarge']),
+	  series: _react.PropTypes.arrayOf(_react.PropTypes.shape({
+	    label: _react.PropTypes.string,
+	    value: _react.PropTypes.number.isRequired,
+	    colorIndex: _react.PropTypes.string,
+	    important: _react.PropTypes.bool,
+	    onClick: _react.PropTypes.func
+	  })),
+	  stacked: _react.PropTypes.bool,
+	  threshold: _react.PropTypes.number,
+	  thresholds: _react.PropTypes.arrayOf(_react.PropTypes.shape({
+	    label: _react.PropTypes.string,
+	    value: _react.PropTypes.number.isRequired,
+	    colorIndex: _react.PropTypes.string
+	  })),
+	  type: _react.PropTypes.oneOf(['bar', 'arc', 'circle', 'spiral']),
+	  units: _react.PropTypes.string,
+	  value: _react.PropTypes.number,
+	  vertical: _react.PropTypes.bool,
+	  responsive: _react.PropTypes.bool
+	};
+
+	Meter.defaultProps = {
+	  a11yTitleId: 'meter-title',
+	  a11yDescId: 'meter-desc',
+	  type: 'bar'
+	};
+
+	Meter.contextTypes = {
+	  intl: _react.PropTypes.object
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _utils = __webpack_require__(233);
+
+	var _Graphic2 = __webpack_require__(234);
+
+	var _Graphic3 = _interopRequireDefault(_Graphic2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var BAR_LENGTH = _utils.baseDimension;
+	var BAR_THICKNESS = _utils.baseUnit;
+	var MID_BAR_THICKNESS = BAR_THICKNESS / 2;
+
+	var Bar = function (_Graphic) {
+	  _inherits(Bar, _Graphic);
+
+	  function Bar(props) {
+	    _classCallCheck(this, Bar);
+
+	    //needed in Graphic.js to fix minification issues
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Bar).call(this, props));
+
+	    _this.displayName = 'Bar';
+	    return _this;
+	  }
+
+	  _createClass(Bar, [{
+	    key: '_viewBoxDimensions',
+	    value: function _viewBoxDimensions(props) {
+	      var viewBoxHeight = void 0;
+	      var viewBoxWidth = void 0;
+	      if (props.vertical) {
+	        if (props.stacked) {
+	          viewBoxWidth = BAR_THICKNESS;
+	        } else {
+	          viewBoxWidth = BAR_THICKNESS * Math.max(1, props.series.length);
+	        }
+	        viewBoxHeight = BAR_LENGTH;
+	      } else {
+	        viewBoxWidth = BAR_LENGTH;
+	        if (props.stacked) {
+	          viewBoxHeight = BAR_THICKNESS;
+	        } else {
+	          viewBoxHeight = BAR_THICKNESS * Math.max(1, props.series.length);
+	          if (props.legend && 'inline' === props.legend.placement) {
+	            viewBoxHeight *= 2;
+	          }
+	        }
+	      }
+	      return [viewBoxWidth, viewBoxHeight];
+	    }
+	  }, {
+	    key: '_stateFromProps',
+	    value: function _stateFromProps(props) {
+	      var viewBoxDimensions = this._viewBoxDimensions(props);
+
+	      var state = {
+	        scale: BAR_LENGTH / (props.max.value - props.min.value),
+	        viewBoxWidth: viewBoxDimensions[0],
+	        viewBoxHeight: viewBoxDimensions[1]
+	      };
+
+	      return state;
+	    }
+	  }, {
+	    key: '_translateBarWidth',
+	    value: function _translateBarWidth(value) {
+	      return Math.ceil(this.state.scale * value);
+	    }
+	  }, {
+	    key: '_sliceCommands',
+	    value: function _sliceCommands(trackIndex, item, startValue) {
+	      var value = item.value - this.props.min.value;
+	      var start = this._translateBarWidth(startValue);
+	      var distance = Math.max(item.value > 0 ? MID_BAR_THICKNESS : 0, this._translateBarWidth(value));
+	      var commands = void 0;
+	      if (this.props.legend && 'inline' === this.props.legend.placement) {
+	        trackIndex *= 2;
+	      }
+	      var spot = trackIndex * BAR_THICKNESS + MID_BAR_THICKNESS;
+	      if (this.props.legend && 'inline' === this.props.legend.placement) {
+	        spot += MID_BAR_THICKNESS;
+	      }
+	      if (this.props.vertical) {
+	        commands = "M" + spot + "," + (BAR_LENGTH - start) + " L" + spot + "," + (BAR_LENGTH - (start + distance));
+	      } else {
+	        commands = "M" + start + "," + spot + " L" + (start + distance) + "," + spot;
+	      }
+	      return commands;
+	    }
+	  }, {
+	    key: '_renderInlineLegend',
+	    value: function _renderInlineLegend() {
+	      var result = void 0;
+	      if (this.props.legend && 'inline' === this.props.legend.placement) {
+	        result = this.props.series.map(function (item, index) {
+	          var spot = index * BAR_THICKNESS * 2 + MID_BAR_THICKNESS;
+
+	          var label;
+	          if (item.hasOwnProperty('label')) {
+	            label = _react2.default.createElement(
+	              'text',
+	              { key: 'label', x: '0', y: spot, role: 'presentation',
+	                textAnchor: 'start', fontSize: 16 },
+	              item.label
+	            );
+	          }
+
+	          var value;
+	          if (item.hasOwnProperty('value')) {
+	            var text = item.value;
+	            if (item.units || this.props.units) {
+	              text += ' ' + (item.units || this.props.units);
+	            }
+	            var x = this._translateBarWidth(this.props.max.value);
+	            value = _react2.default.createElement(
+	              'text',
+	              { key: 'value', x: x, y: spot, role: 'presentation',
+	                textAnchor: 'end', fontSize: 16 },
+	              text
+	            );
+	          }
+
+	          return [label, value];
+	        }, this);
+	      }
+	      return result;
+	    }
+	  }]);
+
+	  return Bar;
+	}(_Graphic3.default);
+
+	//needed in Graphic.js to fix minification issues
+
+
+	exports.default = Bar;
+	Bar.displayName = 'Bar';
+	module.exports = exports['default'];
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _CSSClassnames = __webpack_require__(177);
+
+	var _CSSClassnames2 = _interopRequireDefault(_CSSClassnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var METER = _CSSClassnames2.default.METER;
+
+	function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+	  var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+	  return {
+	    x: centerX + radius * Math.cos(angleInRadians),
+	    y: centerY + radius * Math.sin(angleInRadians)
+	  };
+	}
+
+	exports.default = {
+
+	  baseUnit: 24,
+	  baseDimension: 192, // 24 * 8
+
+	  classRoot: METER,
+
+	  propTypes: {
+	    activeIndex: _react.PropTypes.number,
+	    a11yDesc: _react.PropTypes.string,
+	    a11yDescId: _react.PropTypes.string,
+	    a11yTitle: _react.PropTypes.string,
+	    a11yTitleId: _react.PropTypes.string,
+	    max: _react.PropTypes.shape({
+	      value: _react.PropTypes.number,
+	      label: _react.PropTypes.string
+	    }).isRequired,
+	    min: _react.PropTypes.shape({
+	      value: _react.PropTypes.number,
+	      label: _react.PropTypes.string
+	    }).isRequired,
+	    onActivate: _react.PropTypes.func.isRequired,
+	    // size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
+	    series: _react.PropTypes.arrayOf(_react.PropTypes.shape({
+	      label: _react.PropTypes.string,
+	      value: _react.PropTypes.number.isRequired,
+	      colorIndex: _react.PropTypes.string,
+	      important: _react.PropTypes.bool,
+	      onClick: _react.PropTypes.func
+	    })).isRequired,
+	    total: _react.PropTypes.number.isRequired,
+	    units: _react.PropTypes.string
+	  },
+
+	  polarToCartesian: polarToCartesian,
+
+	  arcCommands: function arcCommands(centerX, centerY, radius, startAngle, endAngle) {
+	    // handle that we can't draw a complete circle
+	    if (endAngle - startAngle >= 360) {
+	      endAngle = startAngle + 359.99;
+	    }
+	    var start = polarToCartesian(centerX, centerY, radius, endAngle);
+	    var end = polarToCartesian(centerX, centerY, radius, startAngle);
+	    var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
+	    var d = ["M", start.x, start.y, "A", radius, radius, 0, arcSweep, 0, end.x, end.y].join(" ");
+	    return d;
+	  },
+
+	  translateEndAngle: function translateEndAngle(startAngle, anglePer, value) {
+	    return Math.min(360, Math.max(0, startAngle + anglePer * value));
+	  },
+
+	  buildPath: function buildPath(itemIndex, commands, classes, onActivate, onClick, a11yDescId, a11yTitle, activeMeterSlice) {
+	    if (onActivate) {
+	      var onOver = onActivate.bind(null, itemIndex);
+	      var onOut = onActivate.bind(null, null);
+
+	      var a11yRoles = {};
+	      var titleComponent = void 0;
+	      var activeSlice = void 0;
+	      if (a11yTitle && a11yDescId) {
+	        activeSlice = activeMeterSlice;
+	        var pathTitleId = 'title_' + a11yDescId;
+	        a11yRoles['aria-labelledby'] = pathTitleId;
+	        a11yRoles.id = a11yDescId;
+	        a11yRoles.role = 'tab';
+	        titleComponent = _react2.default.createElement(
+	          'title',
+	          { id: pathTitleId },
+	          a11yTitle
+	        );
+	      }
+
+	      return _react2.default.createElement(
+	        'g',
+	        _extends({ key: itemIndex, ref: a11yDescId }, a11yRoles),
+	        titleComponent,
+	        _react2.default.createElement('path', { ref: activeSlice, className: classes.join(' '), d: commands,
+	          onFocus: onOver, onBlur: onOut, 'data-index': itemIndex,
+	          onMouseOver: onOver, onMouseOut: onOut,
+	          onClick: onClick })
+	      );
+	    } else {
+	      return _react2.default.createElement('path', { key: itemIndex, className: classes.join(' '), d: commands });
+	    }
+	  }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(38);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _utils = __webpack_require__(233);
+
+	var _Intl = __webpack_require__(175);
+
+	var _Intl2 = _interopRequireDefault(_Intl);
+
+	var _KeyboardAccelerators = __webpack_require__(173);
+
+	var _KeyboardAccelerators2 = _interopRequireDefault(_KeyboardAccelerators);
+
+	var _CSSClassnames = __webpack_require__(177);
+
+	var _CSSClassnames2 = _interopRequireDefault(_CSSClassnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var COLOR_INDEX = _CSSClassnames2.default.COLOR_INDEX;
+
+	var CLASS_ROOT = _utils.classRoot;
+	var MIN_WIDTH = 0.033;
+
+	var Graphic = function (_Component) {
+	  _inherits(Graphic, _Component);
+
+	  function Graphic(props) {
+	    _classCallCheck(this, Graphic);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Graphic).call(this));
+
+	    _this.state = _this._stateFromProps(props);
+
+	    _this._onEnter = _this._onEnter.bind(_this);
+	    _this._onRequestForNextLegend = _this._onRequestForNextLegend.bind(_this);
+	    _this._onRequestForPreviousLegend = _this._onRequestForPreviousLegend.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(Graphic, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this._keyboardHandlers = {
+	        left: this._onRequestForPreviousLegend,
+	        up: this._onRequestForPreviousLegend,
+	        right: this._onRequestForNextLegend,
+	        down: this._onRequestForNextLegend,
+	        enter: this._onEnter,
+	        space: this._onEnter
+	      };
+	      _KeyboardAccelerators2.default.startListeningToKeyboard(this, this._keyboardHandlers);
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(newProps) {
+	      var state = this._stateFromProps(newProps);
+	      this.setState(state);
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      _KeyboardAccelerators2.default.stopListeningToKeyboard(this, this._keyboardHandlers);
+	    }
+
+	    // override
+
+	  }, {
+	    key: '_stateFromProps',
+	    value: function _stateFromProps(props) {
+	      return {};
+	    }
+
+	    // override
+
+	  }, {
+	    key: '_sliceCommands',
+	    value: function _sliceCommands(trackIndex, item, startValue) {
+	      return "";
+	    }
+	  }, {
+	    key: '_renderSlice',
+	    value: function _renderSlice(trackIndex, item, itemIndex, startValue, maxValue, threshold) {
+	      var path = void 0;
+	      if (!item.hidden) {
+	        var classes = [CLASS_ROOT + '__slice'];
+	        var activeMeterSlice = void 0;
+	        if (itemIndex === this.props.activeIndex) {
+	          activeMeterSlice = 'activeMeterSlice';
+	          classes.push(CLASS_ROOT + '__slice--active');
+	        }
+
+	        if (item.onClick) {
+	          classes.push(CLASS_ROOT + "__slice--clickable");
+	        }
+
+	        classes.push(COLOR_INDEX + '-' + item.colorIndex);
+
+	        var commands = this._sliceCommands(trackIndex, item, startValue, maxValue);
+
+	        if (threshold) {
+	          path = (0, _utils.buildPath)(itemIndex, commands, classes, this.props.onActivate, item.onClick);
+	        } else {
+	          var a11yDescId = this.props.a11yDescId + '_' + itemIndex;
+	          var a11yTitle = item.value + ' ' + (item.label || this.props.units || '');
+
+	          path = (0, _utils.buildPath)(itemIndex, commands, classes, this.props.onActivate, item.onClick, a11yDescId, a11yTitle, activeMeterSlice);
+	        }
+	      }
+
+	      return path;
+	    }
+	  }, {
+	    key: '_renderSlices',
+	    value: function _renderSlices(series, trackIndex, threshold) {
+	      var _this2 = this;
+
+	      var _props = this.props;
+	      var min = _props.min;
+	      var max = _props.max;
+
+	      var startValue = min.value;
+
+	      var paths = series.map(function (item, itemIndex) {
+	        var path = _this2._renderSlice(trackIndex, item, itemIndex, startValue, max.value, threshold);
+
+	        startValue += Math.max(MIN_WIDTH * max.value, item.value);
+
+	        return path;
+	      });
+
+	      return paths;
+	    }
+	  }, {
+	    key: '_loadingCommands',
+	    value: function _loadingCommands() {
+	      return this._sliceCommands(0, this.props.max, this.props.min.value);
+	    }
+	  }, {
+	    key: '_onRequestForPreviousLegend',
+	    value: function _onRequestForPreviousLegend(event) {
+	      if (document.activeElement === this.refs.meter) {
+	        event.preventDefault();
+	        var totalValueCount = _reactDom2.default.findDOMNode(this.refs.meterValues).childNodes.length;
+
+	        if (this.props.activeIndex - 1 < 0) {
+	          this.props.onActivate(totalValueCount - 1);
+	        } else {
+	          this.props.onActivate(this.props.activeIndex - 1);
+	        }
+
+	        //stop event propagation
+	        return true;
+	      }
+	    }
+	  }, {
+	    key: '_onRequestForNextLegend',
+	    value: function _onRequestForNextLegend(event) {
+	      if (document.activeElement === this.refs.meter) {
+	        event.preventDefault();
+	        var totalValueCount = _reactDom2.default.findDOMNode(this.refs.meterValues).childNodes.length;
+
+	        if (this.props.activeIndex + 1 >= totalValueCount) {
+	          this.props.onActivate(0);
+	        } else {
+	          this.props.onActivate(this.props.activeIndex + 1);
+	        }
+
+	        //stop event propagation
+	        return true;
+	      }
+	    }
+	  }, {
+	    key: '_onEnter',
+	    value: function _onEnter(event) {
+	      if (document.activeElement === this.refs.meter) {
+	        if (this.refs.activeMeterSlice) {
+	          var index = this.refs.activeMeterSlice.getAttribute('data-index');
+
+	          //trigger click on active meter slice
+	          if (this.props.series[index].onClick) {
+	            this.props.series[index].onClick();
+	          }
+	        }
+	      }
+	    }
+	  }, {
+	    key: '_renderLoading',
+	    value: function _renderLoading() {
+	      var classes = [CLASS_ROOT + '__slice'];
+	      classes.push(CLASS_ROOT + '__slice--loading');
+	      classes.push(COLOR_INDEX + '-loading');
+	      var commands = this._loadingCommands();
+	      return [_react2.default.createElement('path', { key: 'loading', className: classes.join(' '), d: commands })];
+	    }
+	  }, {
+	    key: '_renderValues',
+	    value: function _renderValues() {
+	      var _this3 = this;
+
+	      var _props2 = this.props;
+	      var min = _props2.min;
+	      var max = _props2.max;
+
+	      var values = void 0;
+	      if (this.props.stacked) {
+	        values = this._renderSlices(this.props.series, 0);
+	      } else {
+	        values = this.props.series.map(function (item, index) {
+	          return _this3._renderSlice(index, item, index, min.value, max.value);
+	        });
+	      }
+	      if (values.length === 0) {
+	        values = this._renderLoading();
+	      }
+	      return _react2.default.createElement(
+	        'g',
+	        { ref: 'meterValues', className: CLASS_ROOT + '__values' },
+	        values
+	      );
+	    }
+	  }, {
+	    key: '_renderTracks',
+	    value: function _renderTracks() {
+	      var _this4 = this;
+
+	      var _props3 = this.props;
+	      var min = _props3.min;
+	      var max = _props3.max;
+
+	      var trackValue = { value: max.value, colorIndex: 'unset' };
+	      var tracks = void 0;
+	      if (this.props.stacked) {
+	        tracks = this._renderSlice(0, trackValue, 0, min.value, max.value, true);
+	      } else {
+	        tracks = this.props.series.map(function (item, index) {
+	          return _this4._renderSlice(index, trackValue, index, min.value, max.value, true);
+	        });
+	      }
+	      return _react2.default.createElement(
+	        'g',
+	        { className: CLASS_ROOT + '__tracks' },
+	        tracks
+	      );
+	    }
+	  }, {
+	    key: '_renderThresholds',
+	    value: function _renderThresholds() {
+	      var result = void 0;
+	      var thresholds = this._renderSlices(this.props.thresholds, -0.4, true);
+	      if (thresholds.length > 0) {
+	        result = _react2.default.createElement(
+	          'g',
+	          { className: CLASS_ROOT + '__thresholds' },
+	          thresholds
+	        );
+	      }
+	      return result;
+	    }
+	  }, {
+	    key: '_renderTotal',
+	    value: function _renderTotal() {
+	      return this.props.series.map(function (s) {
+	        return s.value;
+	      }).reduce(function (prev, curr) {
+	        return prev + curr;
+	      }, 0);
+	    }
+	  }, {
+	    key: '_renderTopLayer',
+	    value: function _renderTopLayer() {
+	      return null;
+	    }
+	  }, {
+	    key: '_renderInlineLegend',
+	    value: function _renderInlineLegend() {
+	      return null;
+	    }
+	  }, {
+	    key: '_renderA11YTitle',
+	    value: function _renderA11YTitle() {
+	      var a11yTitle = this.props.a11yTitle;
+	      if (!a11yTitle) {
+	        var graphicTitle = _Intl2.default.getMessage(this.context.intl, this.displayName);
+	        var meterTitle = _Intl2.default.getMessage(this.context.intl, 'Meter');
+
+	        a11yTitle = graphicTitle + ' ' + meterTitle;
+	      }
+
+	      return a11yTitle;
+	    }
+	  }, {
+	    key: '_renderA11YDesc',
+	    value: function _renderA11YDesc() {
+	      var _this5 = this;
+
+	      var a11yDesc = this.props.a11yDesc;
+	      var units = this.props.units || '';
+	      if (!a11yDesc) {
+	        var valueLabel = _Intl2.default.getMessage(this.context.intl, 'Value');
+	        a11yDesc = ', ' + valueLabel + ': ' + this._renderTotal() + ' ' + units;
+
+	        if (this.props.min) {
+	          var minLabel = _Intl2.default.getMessage(this.context.intl, 'Min');
+	          a11yDesc += ', ' + minLabel + ': ' + this.props.min.value + ' ' + units;
+	        }
+
+	        if (this.props.max) {
+	          var maxLabel = _Intl2.default.getMessage(this.context.intl, 'Max');
+	          a11yDesc += ', ' + maxLabel + ': ' + this.props.max.value + ' ' + units;
+	        }
+
+	        if (this.props.thresholds) {
+	          (function () {
+	            var thresholdLabel = _Intl2.default.getMessage(_this5.context.intl, 'Threshold');
+	            _this5.props.thresholds.forEach(function (threshold) {
+	              if (threshold.ariaLabel) {
+	                a11yDesc += ', ' + thresholdLabel + ': ' + threshold.ariaLabel;
+	              }
+	            });
+	          })();
+	        }
+	      }
+
+	      return a11yDesc;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var classes = [CLASS_ROOT];
+	      if (this.props.className) {
+	        classes.push(this.props.className);
+	      }
+
+	      var tracks = this._renderTracks();
+	      var values = this._renderValues();
+	      var thresholds = this._renderThresholds();
+	      var topLayer = this._renderTopLayer();
+	      var inlineLegend = this._renderInlineLegend();
+
+	      var a11yTitle = this._renderA11YTitle();
+	      var a11yDesc = this._renderA11YDesc();
+
+	      var activeDescendant = this.props.a11yDescId + '_' + (this.props.activeIndex || 0);
+
+	      return _react2.default.createElement(
+	        'svg',
+	        { ref: 'meter', className: CLASS_ROOT + '__graphic',
+	          tabIndex: '0', role: this.props.a11yRole,
+	          width: this.state.viewBoxWidth,
+	          height: this.state.viewBoxHeight,
+	          viewBox: "0 0 " + this.state.viewBoxWidth + " " + this.state.viewBoxHeight,
+	          preserveAspectRatio: 'xMidYMid meet',
+	          'aria-activedescendant': activeDescendant,
+	          'aria-labelledby': this.props.a11yTitleId + ' ' + this.props.a11yDescId },
+	        _react2.default.createElement(
+	          'title',
+	          { id: this.props.a11yTitleId },
+	          a11yTitle
+	        ),
+	        _react2.default.createElement(
+	          'desc',
+	          { id: this.props.a11yDescId },
+	          a11yDesc
+	        ),
+	        tracks,
+	        thresholds,
+	        values,
+	        inlineLegend,
+	        topLayer
+	      );
+	    }
+	  }]);
+
+	  return Graphic;
+	}(_react.Component);
+
+	exports.default = Graphic;
+
+
+	Graphic.propTypes = _extends({
+	  a11yRole: _react.PropTypes.string,
+	  stacked: _react.PropTypes.bool,
+	  thresholds: _react.PropTypes.arrayOf(_react.PropTypes.shape({
+	    label: _react.PropTypes.string,
+	    value: _react.PropTypes.number.isRequired,
+	    colorIndex: _react.PropTypes.string
+	  })).isRequired,
+	  vertical: _react.PropTypes.bool
+	}, _utils.propTypes);
+
+	Graphic.contextTypes = {
+	  intl: _react.PropTypes.object
+	};
+
+	Graphic.defaultProps = {
+	  a11yRole: 'img'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _utils = __webpack_require__(233);
+
+	var _Graphic2 = __webpack_require__(234);
+
+	var _Graphic3 = _interopRequireDefault(_Graphic2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CLASS_ROOT = _utils.classRoot;
+
+	var SPIRAL_WIDTH = _utils.baseDimension;
+	var SPIRAL_RADIUS = _utils.baseDimension / 2 - _utils.baseUnit / 2;
+	var RING_THICKNESS = _utils.baseUnit;
+	// Allow for active value content next to a spiral meter
+
+	var Spiral = function (_Graphic) {
+	  _inherits(Spiral, _Graphic);
+
+	  function Spiral(props) {
+	    _classCallCheck(this, Spiral);
+
+	    //needed in Graphic.js to fix minification issues
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Spiral).call(this, props));
+
+	    _this.displayName = 'Spiral';
+	    return _this;
+	  }
+
+	  _createClass(Spiral, [{
+	    key: '_stateFromProps',
+	    value: function _stateFromProps(props) {
+	      var viewBoxHeight = Math.max(SPIRAL_WIDTH, RING_THICKNESS * (props.series.length + 1) * 2);
+	      var viewBoxWidth = viewBoxHeight;
+
+	      var state = {
+	        startAngle: 0,
+	        anglePer: 270.0 / props.max.value,
+	        angleOffset: 180,
+	        // The last spiral ends out near but not quite at the edge of the view box.
+	        startRadius: Math.max(SPIRAL_RADIUS, RING_THICKNESS * (props.series.length + 0.5)) - Math.max(0, props.series.length - 1) * RING_THICKNESS,
+	        viewBoxWidth: viewBoxWidth,
+	        viewBoxHeight: viewBoxHeight
+	      };
+
+	      return state;
+	    }
+	  }, {
+	    key: '_sliceCommands',
+	    value: function _sliceCommands(trackIndex, item, startValue) {
+	      var startAngle = (0, _utils.translateEndAngle)(this.state.startAngle, this.state.anglePer, startValue);
+	      var endAngle = (0, _utils.translateEndAngle)(startAngle, this.state.anglePer, item.value);
+	      var radius = Math.min(SPIRAL_RADIUS, this.state.startRadius + trackIndex * RING_THICKNESS);
+	      return (0, _utils.arcCommands)(SPIRAL_WIDTH / 2, SPIRAL_WIDTH / 2, radius, startAngle + this.state.angleOffset, endAngle + this.state.angleOffset);
+	    }
+	  }, {
+	    key: '_renderThresholds',
+	    value: function _renderThresholds() {
+	      return null;
+	    }
+	  }, {
+	    key: '_renderTopLayer',
+	    value: function _renderTopLayer() {
+	      var x = SPIRAL_RADIUS + RING_THICKNESS;
+	      var y = SPIRAL_RADIUS + RING_THICKNESS * 2.2;
+	      var labels = this.props.series.map(function (item, index) {
+	        var classes = [CLASS_ROOT + "__label"];
+	        if (index === this.props.activeIndex) {
+	          classes.push(CLASS_ROOT + "__label--active");
+	        }
+
+	        var textX = x;
+	        var textY = y;
+
+	        y += RING_THICKNESS;
+
+	        return _react2.default.createElement(
+	          'text',
+	          { key: item.label || index, x: textX, y: textY,
+	            textAnchor: 'start', fontSize: 16,
+	            className: classes.join(' '),
+	            onMouseOver: this.props.onActivate.bind(null, index),
+	            onMouseOut: this.props.onActivate.bind(null, null),
+	            onClick: item.onClick },
+	          item.label
+	        );
+	      }, this);
+
+	      return _react2.default.createElement(
+	        'g',
+	        { className: CLASS_ROOT + "__labels" },
+	        labels
+	      );
+	    }
+	  }]);
+
+	  return Spiral;
+	}(_Graphic3.default);
+
+	exports.default = Spiral;
+
+
+	Spiral.defaultProps = {
+	  thresholds: []
+	};
+
+	//needed in Graphic.js to fix minification issues
+	Spiral.displayName = 'Spiral';
+	module.exports = exports['default'];
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _utils = __webpack_require__(233);
+
+	var _Graphic2 = __webpack_require__(234);
+
+	var _Graphic3 = _interopRequireDefault(_Graphic2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CIRCLE_WIDTH = _utils.baseDimension;
+	var CIRCLE_RADIUS = _utils.baseDimension / 2 - _utils.baseUnit / 2;
+	var RING_THICKNESS = _utils.baseUnit;
+
+	var Circle = function (_Graphic) {
+	  _inherits(Circle, _Graphic);
+
+	  function Circle(props) {
+	    _classCallCheck(this, Circle);
+
+	    //needed in Graphic.js to fix minification issues
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Circle).call(this, props));
+
+	    _this.displayName = 'Circle';
+	    return _this;
+	  }
+
+	  _createClass(Circle, [{
+	    key: '_stateFromProps',
+	    value: function _stateFromProps(props) {
+	      if (!props.stacked && (props.series.length - 1) * RING_THICKNESS > CIRCLE_RADIUS) {
+	        console.warn("You cannot have more than " + Math.round(CIRCLE_RADIUS / RING_THICKNESS) + " data values in a circle Meter");
+	      }
+
+	      var state = {
+	        startAngle: 0,
+	        anglePer: !props.max ? 0 : 360 / (props.max.value - props.min.value),
+	        angleOffset: 180,
+	        viewBoxWidth: CIRCLE_WIDTH,
+	        viewBoxHeight: CIRCLE_WIDTH
+	      };
+
+	      return state;
+	    }
+	  }, {
+	    key: '_sliceCommands',
+	    value: function _sliceCommands(trackIndex, item, startValue, maxValue) {
+	      var startAngle = (0, _utils.translateEndAngle)(this.state.startAngle, this.state.anglePer, startValue);
+
+	      var endAngle;
+	      if (!item.value) {
+	        endAngle = startAngle;
+	      } else if (startValue + item.value >= maxValue) {
+	        endAngle = 360;
+	      } else {
+	        endAngle = Math.min(360 - RING_THICKNESS / 2, Math.max(startAngle + RING_THICKNESS / 2, (0, _utils.translateEndAngle)(startAngle, this.state.anglePer, item.value)));
+	      }
+
+	      var radius = Math.max(1, CIRCLE_RADIUS - trackIndex * RING_THICKNESS);
+	      return (0, _utils.arcCommands)(CIRCLE_WIDTH / 2, CIRCLE_WIDTH / 2, radius, startAngle + this.state.angleOffset, endAngle + this.state.angleOffset);
+	    }
+	  }]);
+
+	  return Circle;
+	}(_Graphic3.default);
+
+	//needed in Graphic.js to fix minification issues
+
+
+	exports.default = Circle;
+	Circle.displayName = 'Circle';
+	module.exports = exports['default'];
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _utils = __webpack_require__(233);
+
+	var _Graphic2 = __webpack_require__(234);
+
+	var _Graphic3 = _interopRequireDefault(_Graphic2);
+
+	var _CSSClassnames = __webpack_require__(177);
+
+	var _CSSClassnames2 = _interopRequireDefault(_CSSClassnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CLASS_ROOT = _utils.classRoot;
+	var COLOR_INDEX = _CSSClassnames2.default.COLOR_INDEX;
+
+	var ARC_WIDTH = _utils.baseDimension;
+	var ARC_HEIGHT = Math.round(_utils.baseDimension * 0.75);
+	var ARC_RADIUS = _utils.baseDimension / 2 - _utils.baseUnit / 2;
+	var INDICATOR_HUB_RADIUS = _utils.baseUnit / 4;
+	var RING_THICKNESS = _utils.baseUnit;
+
+	function singleIndicatorCommands(centerX, centerY, radius, startAngle, endAngle, length) {
+	  var point = (0, _utils.polarToCartesian)(centerX, centerY, radius - (length - INDICATOR_HUB_RADIUS), endAngle - 1);
+	  var start = (0, _utils.polarToCartesian)(centerX, centerY, radius, endAngle - 1);
+	  var d = ["M", centerX, centerY - INDICATOR_HUB_RADIUS, "A", INDICATOR_HUB_RADIUS, INDICATOR_HUB_RADIUS, 0, 1, 1, centerX, centerY + INDICATOR_HUB_RADIUS, "A", INDICATOR_HUB_RADIUS, INDICATOR_HUB_RADIUS, 0, 1, 1, centerX, centerY - INDICATOR_HUB_RADIUS, "M", point.x, point.y, "L", start.x, start.y].join(" ");
+	  return d;
+	}
+
+	var Arc = function (_Graphic) {
+	  _inherits(Arc, _Graphic);
+
+	  function Arc(props) {
+	    _classCallCheck(this, Arc);
+
+	    //needed in Graphic.js to fix minification issues
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Arc).call(this, props));
+
+	    _this.displayName = 'Arc';
+	    return _this;
+	  }
+
+	  _createClass(Arc, [{
+	    key: '_viewBoxDimensions',
+	    value: function _viewBoxDimensions(props) {
+	      var viewBoxWidth;
+	      var viewBoxHeight;
+	      if (props.vertical) {
+	        viewBoxWidth = ARC_HEIGHT;
+	        viewBoxHeight = ARC_WIDTH;
+	      } else {
+	        viewBoxWidth = ARC_WIDTH;
+	        viewBoxHeight = ARC_HEIGHT;
+	      }
+	      return [viewBoxWidth, viewBoxHeight];
+	    }
+	  }, {
+	    key: '_stateFromProps',
+	    value: function _stateFromProps(props) {
+	      var viewBoxDimensions = this._viewBoxDimensions(props);
+
+	      var state = {
+	        startAngle: 60,
+	        anglePer: !props.max ? 0 : 240.0 / (props.max.value - props.min.value),
+	        angleOffset: 180,
+	        viewBoxWidth: viewBoxDimensions[0],
+	        viewBoxHeight: viewBoxDimensions[1]
+	      };
+	      if (props.vertical) {
+	        state.angleOffset = 90;
+	      } else {
+	        state.angleOffset = 180;
+	      }
+
+	      return state;
+	    }
+	  }, {
+	    key: '_sliceCommands',
+	    value: function _sliceCommands(trackIndex, item, startValue) {
+	      var startAngle = (0, _utils.translateEndAngle)(this.state.startAngle, this.state.anglePer, startValue);
+	      var endAngle = Math.max(startAngle + (item.value > 0 ? RING_THICKNESS / 2 : 0), (0, _utils.translateEndAngle)(startAngle, this.state.anglePer, item.value));
+	      var radius = Math.max(1, ARC_RADIUS - trackIndex * RING_THICKNESS);
+	      return (0, _utils.arcCommands)(ARC_WIDTH / 2, ARC_WIDTH / 2, radius, startAngle + this.state.angleOffset, endAngle + this.state.angleOffset);
+	    }
+	  }, {
+	    key: '_renderTopLayer',
+	    value: function _renderTopLayer() {
+	      var indicator;
+	      if (this.props.series.length === 1) {
+	        var item = this.props.series[0];
+	        var startAngle = this.state.startAngle;
+	        var endAngle = (0, _utils.translateEndAngle)(startAngle, this.state.anglePer, item.value);
+	        var length = ARC_RADIUS;
+	        var x = ARC_WIDTH / 2;
+	        var y = ARC_WIDTH / 2;
+	        var indicatorCommands = singleIndicatorCommands(x, y, ARC_RADIUS, startAngle + this.state.angleOffset, endAngle + this.state.angleOffset, length);
+	        indicator = _react2.default.createElement('path', { fill: 'none',
+	          className: CLASS_ROOT + '__slice-indicator ' + COLOR_INDEX + '-' + item.colorIndex,
+	          d: indicatorCommands });
+	      }
+
+	      return indicator;
+	    }
+	  }]);
+
+	  return Arc;
+	}(_Graphic3.default);
+
+	exports.default = Arc;
 	module.exports = exports['default'];
 
 /***/ }
