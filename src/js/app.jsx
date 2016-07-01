@@ -8,6 +8,7 @@ import Intro from './app/intro.jsx'
 import Slider from 'react-viewport-slider'
 import GMeter from './app/g_meter.jsx'
 import HomeSection from './app/home_section.jsx'
+import GHeadline from './app/g_headline.jsx'
 
 export default class App extends React.Component {
   render() {
@@ -15,7 +16,8 @@ export default class App extends React.Component {
       <div>
         <Slider>
           <HomeSection>
-            <Intro />
+            <GHeadline text='Third Eye' />
+            <p>Decentralized Autonomous Emergency Response System</p>
           </HomeSection>
           <HomeSection>
             <GDistribution />
