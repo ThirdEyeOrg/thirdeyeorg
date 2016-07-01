@@ -7,24 +7,25 @@ import GWorldMap from './app/g_worldmap.jsx'
 import Intro from './app/intro.jsx'
 import Slider from 'react-viewport-slider'
 import GMeter from './app/g_meter.jsx'
+import HomeSection from './app/home_section.jsx'
 
 export default class App extends React.Component {
   render() {
     return(
       <div>
         <Slider>
-          <div style={{margin: '0 auto', padding: '120px'}}>
+          <HomeSection>
             <Intro />
-          </div>
-          <div style={{margin: '0 auto', padding: '120px'}}>
+          </HomeSection>
+          <HomeSection>
             <GDistribution />
-          </div>
-          <div style={{margin: '0 auto', padding: '120px'}}>
+          </HomeSection>
+          <HomeSection>
             <GMeter />
-          </div>
-          <div style={{margin: '0 auto', padding: '120px'}} align='center'>
+          </HomeSection>
+          <HomeSection>
             <GWorldMap />
-          </div>
+          </HomeSection>
         </Slider>
       </div>
     );
