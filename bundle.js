@@ -20403,6 +20403,10 @@
 
 	var _home_section2 = _interopRequireDefault(_home_section);
 
+	var _g_headline = __webpack_require__(215);
+
+	var _g_headline2 = _interopRequireDefault(_g_headline);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20432,7 +20436,12 @@
 	          _react2.default.createElement(
 	            _home_section2.default,
 	            null,
-	            _react2.default.createElement(_intro2.default, null)
+	            _react2.default.createElement(_g_headline2.default, { text: 'Third Eye' }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Decentralized Autonomous Emergency Response System'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            _home_section2.default,
