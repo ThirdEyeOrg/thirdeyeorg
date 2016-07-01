@@ -9,11 +9,9 @@ export default class GHeader extends React.Component {
     return(
       <div>
         <Header size="large" justify="between" colorIndex="neutral-1" pad={{"horizontal": "medium"}}>
-          <div className="container">
-            <Title >
-              Third Eye
-            </Title>
-          </div>
+          <Title >
+            Third Eye
+          </Title>
         </Header>
       </div>
     );
