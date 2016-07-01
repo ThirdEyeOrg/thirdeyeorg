@@ -28,7 +28,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {from: './node_modules/jquery/dist/jquery.min.js'},
       {from: './node_modules/bootswatch/paper/bootstrap.min.css'},
-      {from: './node_modules/grommet/grommet-aruba.min.css', to: 'grommet.min.css'},
+      {from: './node_modules/grommet/grommet-hpe.min.css', to: 'grommet.min.css'},
       {from: './src/app.html', to: 'index.html'},
       {from: './src/css/style.css'},
     ]),
