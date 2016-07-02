@@ -9,26 +9,30 @@ import Slider from 'react-viewport-slider'
 import GMeter from './app/g_meter.jsx'
 import HomeSection from './app/home_section.jsx'
 import GHeadline from './app/g_headline.jsx'
+import GIntro from './app/g_intro.jsx'
+import TELogo from './app/te_logo.jsx'
 
 export default class App extends React.Component {
   render() {
     return(
       <div>
-        <Slider>
-          <HomeSection>
-            <GHeadline text='Third Eye' />
-            <p>Decentralized Autonomous Emergency Response System</p>
-          </HomeSection>
-          <HomeSection>
-            <GDistribution />
-          </HomeSection>
-          <HomeSection>
-            <GMeter />
-          </HomeSection>
-          <HomeSection>
-            <GWorldMap />
-          </HomeSection>
-        </Slider>
+        <TELogo />
+        <GIntro />
+        {/* <Slider> */}
+        {/*   <HomeSection> */}
+        {/*     <GHeadline text='Third Eye' /> */}
+        {/*     <p>Decentralized Autonomous Emergency Response System</p> */}
+        {/*   </HomeSection> */}
+        {/*   <HomeSection> */}
+        {/*     <GDistribution /> */}
+        {/*   </HomeSection> */}
+        {/*   <HomeSection> */}
+        {/*     <GMeter /> */}
+        {/*   </HomeSection> */}
+        {/*   <HomeSection> */}
+        {/*     <GWorldMap /> */}
+        {/*   </HomeSection> */}
+        {/* </Slider> */}
       </div>
     );
   }

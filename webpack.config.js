@@ -31,6 +31,8 @@ module.exports = {
       {from: './node_modules/grommet/grommet-hpe.min.css', to: 'grommet.min.css'},
       {from: './src/app.html', to: 'index.html'},
       {from: './src/css/style.css'},
+      {from: './src/css/hpe.css'},
+      {from: './src/img/mobile_first.jpg', to: './img/mobile_first.jpg'},
     ]),
   ],
 }

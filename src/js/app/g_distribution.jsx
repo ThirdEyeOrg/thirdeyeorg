@@ -7,12 +7,11 @@ export default class GDistribution extends React.Component {
   render() {
     return(
       <div>
-        <GHeadline text='Distribution of Incarcentated by Race' />
+        <GHeadline text='Percent of Adults Males Incarcerated' />
         <Distribution series={[
-          {"label": "First", "value": 40, "colorIndex": "graph-1"},
-          {"label": "Second", "value": 30, "colorIndex": "accent-2"},
-          {"label": "Third", "value": 20, "colorIndex": "unset"},
-          {"label": "Fourth", "value": 10, "colorIndex": "graph-1"}
+          {"label": "Black", "value": 4.7, "colorIndex": "graph-1"},
+          {"label": "Hispanic", "value": 1.8, "colorIndex": "accent-2"},
+          {"label": "White", "value": 0.7, "colorIndex": "unset"},
         ]} a11yTitleId="distribution-title-1" a11yDescId="distribution-desc-1" />
     </div>
     );

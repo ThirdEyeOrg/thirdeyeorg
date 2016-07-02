@@ -6,7 +6,7 @@ export default class GWorldMap extends React.Component {
   render() {
     return(
       <div>
-        <GHeadline text='Adoption of Emergency Response System' />
+        <GHeadline text='Effective Emergency Response System Coverage' />
         <WorldMap series={[
           {
             "continent": "NorthAmerica",
@@ -18,21 +18,26 @@ export default class GWorldMap extends React.Component {
             "continent": "SouthAmerica",
             "label": "South America",
             "value": 30,
-            "colorIndex": "accent-2"
+            "colorIndex": "unset"
           },
           {
             "continent": "Europe",
             "label": "Europe",
             "value": 20,
-            "colorIndex": "unset"
+            "colorIndex": "graph-2"
           },
           {
             "continent": "Africa",
             "label": "Africa",
-            "value": 10,
-            "colorIndex": "graph-2"
+            "value": 2,
+            "colorIndex": "unset"
           },
-          {"continent": "Asia", "label": "Asia", "value": 15, "colorIndex": "graph-3"},
+          {
+            "continent": "Asia",
+            "label": "Asia",
+            "value": 65,
+            "colorIndex": "unset"
+          },
           {
             "continent": "Australia",
             "label": "Australia",
