@@ -32,7 +32,6 @@ class HomeSection extends Component {
 };
 
 export default class Home extends Component {
-
   constructor () {
     super();
     this._onScroll = this._onScroll.bind(this);
@@ -66,9 +65,9 @@ export default class Home extends Component {
         <HomeSection primary={true} pad="none">
           <Header fixed={false} appCentered={true} justify="center">
             <Menu direction="row" responsive={false} dropAlign={{left: 'left'}}>
-              <NavAnchor path="/docs/get-started">Start</NavAnchor>
-              <NavAnchor path="/docs/learn">Learn</NavAnchor>
-              <NavAnchor path="/docs">Docs</NavAnchor>
+              <NavAnchor path="/problem">Problem</NavAnchor>
+              <NavAnchor path="/solution">Solution</NavAnchor>
+              <NavAnchor path="/technology">Technology</NavAnchor>
             </Menu>
           </Header>
           <Box pad={{vertical: 'large'}} direction="column" align="center"
@@ -93,7 +92,7 @@ export default class Home extends Component {
           </Box>
           <Box direction="row" justify="between">
             <span>
-             By Qucentis
+             By <a href='http://qucentis.com'>Qucentis</a>
             </span>
             <span>
               © 2016 Third Eye
