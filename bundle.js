@@ -38481,7 +38481,7 @@
 	            _Box2.default,
 	            { pad: { vertical: 'large' }, direction: 'column', align: 'center',
 	              flex: false },
-	            _react2.default.createElement(_Grommet2.default, { size: 'xlarge', a11yTitle: '' }),
+	            _react2.default.createElement('img', { src: './logo-black.svg', width: '100px', height: '100px' }),
 	            _react2.default.createElement(
 	              _Heading2.default,
 	              { tag: 'h1', margin: 'medium' },
