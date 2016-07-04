@@ -72,7 +72,7 @@ export default class Home extends Component {
           </Header>
           <Box pad={{vertical: 'large'}} direction="column" align="center"
             flex={false}>
-            <GrommetLogo size="xlarge" a11yTitle=""/>
+            <img src='./logo-black.svg' width='100px' height='100px' />
             <Heading tag="h1" margin="medium">Third Eye</Heading>
             <Headline size="small" align="center">
               Decentralized, Autonomous Emergency Response System

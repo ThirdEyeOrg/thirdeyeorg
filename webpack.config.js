@@ -32,6 +32,7 @@ module.exports = {
       {from: './src/app.html', to: 'index.html'},
       {from: './src/css/style.css'},
       {from: './src/css/hpe.css'},
+      {from: './src/js/app/logo-black.svg'},
       {from: './src/img/mobile_first.jpg', to: './img/mobile_first.jpg'},
     ]),
   ],
