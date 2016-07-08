@@ -18,6 +18,7 @@ import Hands from './img/Hands.jsx';
 import NavAnchor from './NavAnchor.jsx';
 import NavButton from './NavButton.jsx';
 import ThemeMenu from './ThemeMenu.jsx';
+import Logo from './Logo.jsx';
 
 class HomeSection extends Component {
   render () {
@@ -72,7 +73,7 @@ export default class Home extends Component {
           </Header>
           <Box pad={{vertical: 'large'}} direction="column" align="center"
             flex={false}>
-            <img src='./logo-black.svg' width='100px' height='100px' />
+            <Logo width='180' />
             <Heading tag="h1" margin="medium">Third Eye</Heading>
             <Headline size="small" align="center">
               Decentralized, Autonomous Emergency Response System
